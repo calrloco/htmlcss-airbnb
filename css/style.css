@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: .2rem;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+ 
+}
+.row{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+section{
+    height: 100vh;
+}
+/* bgtext */
+.bg-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 2rem;
+    text-shadow: .4rem .4rem .4rem rgba(0,0,0,.5);
+    color: #f7f7f7;
+    
+  }
+  .city__description{
+      font-style: italic;
+      font-size: 2rem;
+      color: #f7f7f7;
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      transform: translate(-50%,-100%);
+      opacity: 0;
+      transition: all .2s;
+      text-shadow: .4rem .4rem .4rem rgba(0,0,0,.7);
+  }
+  /* bgtext animation*/
+.roma__bg:hover .city__description{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+
+}
+.berlin__bg:hover .city__description{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+
+}
+.paris__bg:hover .city__description{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+
+}
+/* roma */
+.roma__bg{
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgba(231,216,64,.4), rgba(90,0,0,.6))
+    ,url(../img/photo-of-colosseum-during-daytime-2676642.jpg) ;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+}
+.roma__bg:hover{
+   
+    background-image: linear-gradient(to right bottom, rgba(231,216,64,.4), rgba(90,0,0,.8))
+    ,url(../img/photo-of-colosseum-during-daytime-2676642.jpg) ;
+   
+}
+
+
+/* berlin */
+.berlin__bg{
+    
+        width: 100%;
+        background-image: linear-gradient(to right bottom, rgba(243,198,35,.4), rgba(18,118,129,.6))
+        ,url(../img/architecture-asphalt-blur-cables-417023.jpg) ;
+        height: 100%;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: left;
+    
+}
+/* darken gradient */
+.berlin__bg:hover{
+    background-image: linear-gradient(to right bottom, rgba(243,198,35,.4), rgba(18,118,129,.8))
+    ,url(../img/architecture-asphalt-blur-cables-417023.jpg) ;
+    height: 100%;
+}
+.berlin{
+    position: relative;
+}
+
+
+/* paris */
+.paris{
+    position: relative;
+}
+.paris__bg{
+    
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgba(214,171,171,.6), rgba(194,150,204,.6))
+    ,url(../img/tourist-in-paris-3596709.jpg) ;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+/* darken gradient */
+.paris__bg:hover{
+    background-image: linear-gradient(to right bottom, rgba(214,171,171,.6), rgba(194,150,204,.8))
+    ,url(../img/tourist-in-paris-3596709.jpg) ;
+    height: 100%;
+}
